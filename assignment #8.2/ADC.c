@@ -70,7 +70,7 @@ while( ! GET_BIT(ADCSRA,4));
 
 Digital_value = ADC_Adjust;
 
-*val=( (  Digital_value * 500 ) /1024 );   //5v=5000mv  5000/10mv == 500  2~10=1024
+*val=(  Digital_value * 500 ) / 1024 ;   //5v=5000mv  5000/10mv == 500  2~10=1024
 
 #endif
 

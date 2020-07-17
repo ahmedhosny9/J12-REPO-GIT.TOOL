@@ -64,6 +64,7 @@ while(1){
 			LCD_GoTo(1,0);
 			LCD_WriteString("wait 1s to enter");
 			_delay_ms(100);
+			i=0;
 			CHACKPASS_FUN();
 		}
 	}
