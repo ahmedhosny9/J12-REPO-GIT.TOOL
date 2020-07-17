@@ -393,3 +393,28 @@ void DIO_SetPullUp(uint8 Port ,uint8 Pin )
 		break;
 	}
 }
+
+void DIO_TogglePin(uint8 port , uint8 pin)
+{
+	switch(port)
+	{
+		case DIO_PORTA :
+		Toggle_BIT(PORTA , pin);
+		break;
+		
+		case DIO_PORTB :
+		Toggle_BIT(PORTB , pin);
+		break;
+		
+		case DIO_PORTC :
+		Toggle_BIT(PORTC , pin);
+		break;
+		
+		case DIO_PORTD :
+		Toggle_BIT(PORTD , pin);
+		break;
+		
+		default:
+		break;
+	}
+}

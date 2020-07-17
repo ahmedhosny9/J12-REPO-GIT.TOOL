@@ -126,25 +126,37 @@
     <Compile Include="BIT_Math.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="counter.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="counter.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="counter_cfg.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="DIO.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="DIO.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="EXT_INT_ServiceRoutine.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EXT_INT_ServiceRoutines.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="INT_Cfg.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LED.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LED.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="STD.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Timer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Timer.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

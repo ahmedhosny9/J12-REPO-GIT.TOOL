@@ -266,7 +266,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xa42
+.text           0x00000000      0xa82
  *(.vectors)
  .vectors       0x00000000       0x54 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -391,39 +391,39 @@ END GROUP
                 0x00000692        0x8 LCD.o
                 0x00000692                LCD_Clear
  .text.LCD_WriteIntger
-                0x0000069a       0xc2 LCD.o
+                0x0000069a      0x102 LCD.o
                 0x0000069a                LCD_WriteIntger
- .text.main     0x0000075c       0x26 main.o
-                0x0000075c                main
+ .text.main     0x0000079c       0x26 main.o
+                0x0000079c                main
  .text.TEMP_FUN
-                0x00000782       0x8c password.o
-                0x00000782                TEMP_FUN
+                0x000007c2       0x8c password.o
+                0x000007c2                TEMP_FUN
  .text.CHACKPASS_FUN
-                0x0000080e      0x134 password.o
-                0x0000080e                CHACKPASS_FUN
+                0x0000084e      0x134 password.o
+                0x0000084e                CHACKPASS_FUN
  .text.PASSWORD_FUN
-                0x00000942       0x6e password.o
-                0x00000942                PASSWORD_FUN
+                0x00000982       0x6e password.o
+                0x00000982                PASSWORD_FUN
  .text.TEMP_Init
-                0x000009b0        0x6 temp.o
-                0x000009b0                TEMP_Init
+                0x000009f0        0x6 temp.o
+                0x000009f0                TEMP_Init
  .text.TEMP_Read
-                0x000009b6        0x6 temp.o
-                0x000009b6                TEMP_Read
+                0x000009f6        0x6 temp.o
+                0x000009f6                TEMP_Read
  .text.libgcc.div
-                0x000009bc       0x2e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
-                0x000009bc                __divmodsi4
+                0x000009fc       0x2e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+                0x000009fc                __divmodsi4
  .text.libgcc.div
-                0x000009ea       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
-                0x000009ea                __negsi2
+                0x00000a2a       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+                0x00000a2a                __negsi2
  .text.libgcc.div
-                0x000009fa       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x000009fa                __udivmodsi4
-                0x00000a3e                . = ALIGN (0x2)
+                0x00000a3a       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000a3a                __udivmodsi4
+                0x00000a7e                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000a3e        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000a3e                _exit
-                0x00000a3e                exit
+ .fini9         0x00000a7e        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000a7e                _exit
+                0x00000a7e                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -442,11 +442,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000a3e        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000a7e        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000a42                _etext = .
+                0x00000a82                _etext = .
 
-.data           0x00800060       0xbe load address 0x00000a42
+.data           0x00800060       0xbe load address 0x00000a82
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -482,8 +482,8 @@ END GROUP
                 0x00800129                i
  *(COMMON)
                 0x0080012a                PROVIDE (__bss_end, .)
-                0x00000a42                __data_load_start = LOADADDR (.data)
-                0x00000b00                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000a82                __data_load_start = LOADADDR (.data)
+                0x00000b40                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080012a        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -580,50 +580,50 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x1b42
+.debug_info     0x00000000     0x1b06
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_info    0x000004e6       0xd0 ADC.o
  .debug_info    0x000005b6      0x227 DIO.o
  .debug_info    0x000007dd      0x420 KeyPad.o
- .debug_info    0x00000bfd      0x734 LCD.o
- .debug_info    0x00001331      0x177 main.o
- .debug_info    0x000014a8      0x5a9 password.o
- .debug_info    0x00001a51       0xf1 temp.o
+ .debug_info    0x00000bfd      0x6f8 LCD.o
+ .debug_info    0x000012f5      0x177 main.o
+ .debug_info    0x0000146c      0x5a9 password.o
+ .debug_info    0x00001a15       0xf1 temp.o
 
-.debug_abbrev   0x00000000      0xba5
+.debug_abbrev   0x00000000      0xb96
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_abbrev  0x000004a3       0x87 ADC.o
  .debug_abbrev  0x0000052a       0xce DIO.o
  .debug_abbrev  0x000005f8      0x155 KeyPad.o
- .debug_abbrev  0x0000074d      0x17c LCD.o
- .debug_abbrev  0x000008c9       0xaf main.o
- .debug_abbrev  0x00000978      0x199 password.o
- .debug_abbrev  0x00000b11       0x94 temp.o
+ .debug_abbrev  0x0000074d      0x16d LCD.o
+ .debug_abbrev  0x000008ba       0xaf main.o
+ .debug_abbrev  0x00000969      0x199 password.o
+ .debug_abbrev  0x00000b02       0x94 temp.o
 
-.debug_line     0x00000000      0xd3e
+.debug_line     0x00000000      0xd4a
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x115 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_line    0x00000115       0xa9 ADC.o
  .debug_line    0x000001be      0x26e DIO.o
  .debug_line    0x0000042c      0x1f1 KeyPad.o
- .debug_line    0x0000061d      0x30a LCD.o
- .debug_line    0x00000927       0x86 main.o
- .debug_line    0x000009ad      0x32a password.o
- .debug_line    0x00000cd7       0x67 temp.o
+ .debug_line    0x0000061d      0x316 LCD.o
+ .debug_line    0x00000933       0x86 main.o
+ .debug_line    0x000009b9      0x32a password.o
+ .debug_line    0x00000ce3       0x67 temp.o
 
-.debug_frame    0x00000000      0x2c4
+.debug_frame    0x00000000      0x2b8
  *(.debug_frame)
  .debug_frame   0x00000000       0x34 ADC.o
  .debug_frame   0x00000034       0x84 DIO.o
  .debug_frame   0x000000b8       0x68 KeyPad.o
- .debug_frame   0x00000120       0xfc LCD.o
- .debug_frame   0x0000021c       0x24 main.o
- .debug_frame   0x00000240       0x50 password.o
- .debug_frame   0x00000290       0x34 temp.o
+ .debug_frame   0x00000120       0xf0 LCD.o
+ .debug_frame   0x00000210       0x24 main.o
+ .debug_frame   0x00000234       0x50 password.o
+ .debug_frame   0x00000284       0x34 temp.o
 
-.debug_str      0x00000000      0x54a
+.debug_str      0x00000000      0x544
  *(.debug_str)
  .debug_str     0x00000000      0x196 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_str     0x00000196      0x15e ADC.o
@@ -632,23 +632,23 @@ END GROUP
                                 0x1b9 (size before relaxing)
  .debug_str     0x00000398       0xc1 KeyPad.o
                                 0x253 (size before relaxing)
- .debug_str     0x00000459       0x78 LCD.o
-                                0x25c (size before relaxing)
- .debug_str     0x000004d1       0x28 main.o
+ .debug_str     0x00000459       0x72 LCD.o
+                                0x25f (size before relaxing)
+ .debug_str     0x000004cb       0x28 main.o
                                 0x1df (size before relaxing)
- .debug_str     0x000004f9       0x40 password.o
+ .debug_str     0x000004f3       0x40 password.o
                                 0x27c (size before relaxing)
- .debug_str     0x00000539       0x11 temp.o
+ .debug_str     0x00000533       0x11 temp.o
                                 0x182 (size before relaxing)
 
-.debug_loc      0x00000000      0xabb
+.debug_loc      0x00000000      0xaa8
  *(.debug_loc)
  .debug_loc     0x00000000       0x24 ADC.o
  .debug_loc     0x00000024      0x2e4 DIO.o
  .debug_loc     0x00000308      0x15f KeyPad.o
- .debug_loc     0x00000467      0x51b LCD.o
- .debug_loc     0x00000982      0x113 password.o
- .debug_loc     0x00000a95       0x26 temp.o
+ .debug_loc     0x00000467      0x508 LCD.o
+ .debug_loc     0x0000096f      0x113 password.o
+ .debug_loc     0x00000a82       0x26 temp.o
 
 .debug_macinfo
  *(.debug_macinfo)

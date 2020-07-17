@@ -5,13 +5,13 @@
  * Author : Ali
  */ 
 
-#include "timer.h"
+#include "Timer.h"
 #include "LED.h"
 #include <avr/interrupt.h>
 
 
  extern uint8 CounterRegister_InitValue ;
- extern uint32 Number_ctc;
+ extern uint32 Number_OverFlows;
 
 int main(void)
 {
@@ -42,9 +42,9 @@ ISR(TIMER0_OVF_vect)
 	
 	counter++;
 	
-	if(counter == Number_ctc)
+	if(counter == Number_OverFlows)
 	{
-		OCR0 = CounterRegister_InitValue;
+		TCNT0 = CounterRegister_InitValue;
 		
 		counter = 0;
 		

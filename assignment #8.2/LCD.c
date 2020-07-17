@@ -132,7 +132,7 @@ void LCD_Clear(void)
 	LCD_WriteCommand(0x01);
 }
 
-void LCD_WriteIntger  (sint32 num)
+/*void LCD_WriteIntger  (sint32 num)
 {
 	
 	sint8 str[2]={0,0},l=2,i=l;
@@ -156,4 +156,24 @@ void LCD_WriteIntger  (sint32 num)
 	{
 		LCD_WriteChar(48+str[i]);
 	}
+	}*/
+	
+void LCD_WriteIntger  (sint32 num)
+{
+	sint32 y=1;
+	if (num<0)
+	{
+		LCD_WriteChar('-');
+		num*=-1;
 	}
+	while(num>0)
+	{
+        y=((y*10)+(num%10));
+		num/=10; 
+	}
+	while(y>1)
+	{
+        LCD_WriteChar(((y%10)+48));
+		y/=10; 
+	}
+}
