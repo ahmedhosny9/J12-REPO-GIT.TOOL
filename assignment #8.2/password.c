@@ -81,6 +81,9 @@ while(1){
 	void TEMP_FUN(void)
 	{
 		LCD_WriteString("TEMP(S) = ");
+		LCD_GoTo(1,0);
+		LCD_WriteString("to reset click c");
+		
 		
 		while(1){
 		val = KeyPad_GetValue();
